@@ -1,10 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!-- Welcome to the skeleton! Copy this file to the desired destination and add the page content in the #pageContent div. -->
+<html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <!--    <link rel="stylesheet" href="css/index.css" type="text/css">-->
+    <link rel="icon" type="image/x-icon" href="images/WWLogo2.svg">
     <title>Wireless Warehouse | FAQ</title>
+    <style>
+        body {
+            background-color: #000000;
+        }
+        .backgroundImage {
+          -webkit-mask-image: url('images/gears5.gif');
+          mask-image: url('images/gears5.gif');
+          mask-mode: luminance;
+          mask-repeat: no-repeat;
+          mask-size: 100%;
+          filter: blur(8px) brightness(50%);
+          pointer-events: none;
+          position: absolute;
+          object-fit: cover;
+          min-width: 100%;
+          min-height: 100%;
+          z-index: -1;
+        }
+        #pageContent, #modpack {
+            display: grid;
+            justify-items: center;
+            align-content: start;
+        }
+
+        .halyx {
+            height: 200px;
+            margin-bottom: 30px;
+            margin-top: 80px;
+        }
+
+        .shadowed {
+            color:rgb(148, 148, 148);
+            font-style: italic;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        #currentbtn {
+            background-color: rgb(0, 73, 0);
+            padding: 30px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        #previewbtn {
+            background-color: rgb(0, 73, 0);
+            padding: 30px;
+            margin: 10px;
+            border-radius: 20px;
+            scale: .6;
+        }
+
+        #footer:hover {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
+<nav>
+    <div id="navbar">
+        <div class="nav_left">
+            <a href="index.html" style="text-decoration: none;">
+                <div id="brand">
+                    <div class="nb_img"><img src="images/WWLogo2.svg" class="nb_img" alt="WWLogo"></div>
+                </div>
+            </a>
+        </div>
+        <div class="nav_center">
+            <a href="index.html" class="nb_item">Home</a>
+            <a href="FAQ.html" class="nb_item">FAQ</a>
+            <!--            <a href="/server" class="nb_item newTag">Server Status</a>-->
+            <!--            <a href="/modpack" class="nb_item">Modpack</a>-->
+            <!--            <a href="/archive" class="nb_item newTag">Archive</a>-->
+            <!--            <div class="nb_item nb_hover disabled"><p class="nb_folder newTag">Media</p>-->
+            <!--                <div class="nb_secondary">-->
+            <!--                    <a href="/media/screenshots/1" class="nb_item_secondary">1.X World Screenshots</a>-->
+            <!--                    <a href="/media/screenshots/2" class="nb_item_secondary">2.X World Screenshots</a>-->
+            <!--                    <a href="/media/stream" class="nb_item_secondary">Streaming</a>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+        <div class="nav_right">
+            <!-- button class="loginbtn">Sign In</button -->
+        </div>
+    </div>
+</nav>
+<div class="nav_bump"></div>
+<div id="pageContent" style="min-height: 80vh;">
+    <!--    <img src="images/halyx.svg" class="halyx">-->
+    <h1 class="centered h1text" style="font-size: 60px; font-family: Righteous">Wireless Warehouse</h1>
+    <!--    <div id="#modpack">-->
+    <!--        <h1 class="centered h1text" style="font-size: 30px;">Download the Halyx Modpack</h1>-->
+    <!--        <a style="text-decoration: none; color: white;" href="/packwiz-setup">-->
+    <!--            <div id="currentbtn">-->
+    <!--                <h2 class="centered">PackWiz Installer Setup</h2>-->
+    <!--                <p class="centered shadowed">Reccomended for everyone</p>-->
+    <!--            </div>-->
+    <!--        </a>-->
+    <!--        <a style="text-decoration: none; color: white;" href="/dl/pack/current">-->
+    <!--            <div id="currentbtn">-->
+    <!--                <h2 class="centered">Current Release</h2>-->
+    <!--                <p class="centered shadowed">Works on the Halyx Server</p>-->
+    <!--                <p class="shadowed centered">Modpack version 2.0</p>-->
+    <!--            </div>-->
+    <!--        </a>-->
+    <!--        <a style="text-decoration: none; color: white;" href="/dl/resources/resources.zip">-->
+    <!--            <div id="currentbtn">-->
+    <!--                <h2 class="centered">Resource Pack</h2>-->
+    <!--                <p class="centered shadowed">Required to play on the server</p>-->
+    <!--            </div>-->
+    <!--        </a>-->
+    <!--        <a style="text-decoration: none; color: white;" href="/dl/pack/preview">-->
+    <!--            <div id="previewbtn">-->
+    <!--                <h2 class="centered">Preview Release</h2>-->
+    <!--                <p class="centered shadowed">Test the next Halyx client</p>-->
+    <!--                <p class="shadowed centered">Modpack version Not Available</p>-->
+    <!--            </div>-->
+    <!--        </a>-->
+    <!--    </div>-->
+</div>
+<div id="footer">
+    <div class="footer-transition"></div>
+    <div class="footer-main">
+        <div class="footer-box" style="min-width: 30vw">
+            <div class="fbrand">
+                <img src="images/logo_more.gif" class="fbrand">
+            </div>
+        </div>
+        <div class="footer-box">
+            <ul class="footer-links">
+                <li class="footer-links-header">About</li>
+                <!--                <li><a href="/#about" class="footer-links">This is Cesium</a></li>-->
+                <!--                <li><a href="/branding" class="footer-links">Brand</a></li>-->
+                <!--                <li><a href="/credits" class="footer-links">Credits</a></li>-->
+                <!-- <li><a href="/products/cesiumos" class="footer-links">CesiumOS</a></li> -->
+            </ul>
+        </div>
+        <div class="footer-box">
+            <ul class="footer-links">
+                <li class="footer-links-header">Connect</li>
+                <li><a href="https://discord.com/users/770839473322721312" class="footer-links" target="_blank">Discord</a></li>
+                <!--                <li><a href="https://en.pronouns.page/@masterstaff" class="footer-links" target="_blank">Pronouns.page</a></li>-->
+                <!--                <li><a href="https://mastodon.social/@masterstaff" class="footer-links" target="_blank">Mastodon</a></li>-->
+            </ul>
+        </div>
+        <div class="footer-box">
+            <ul class="footer-links">
+                <li class="footer-links-header">Media</li>
+                <li><a href="https://github.com/Snakejac5" class="footer-links" target="_blank">GitHub</a></li>
+                <!--                <li><a href="https://www.youtube.com/@cesiumtv" class="footer-links" target="_blank">YouTube</a></li>-->
+                <!--                <li><a href="https://www.youtube.com/@realcesium" class="footer-links" target="_blank">YouTube (Second Channel)</a></li>-->
+            </ul>
+        </div>
+        <div class="footer-box">
+            <ul class="footer-links">
+                <li class="footer-links-header">Services</li>
+                <li><a href="https://discord.com/users/1304483580050669588" class="footer-links" target="_blank">Discord Bot</a></li>
+                <!--                <li><a href="https://cloud.staffordfs.net" class="footer-links" target="_blank">FS Cloud</a></li>-->
+                <!--                <li><a href="https://archive.cesiumservices.com" class="footer-links" target="_blank">CesiumTV Archive</a></li>-->
+                <!--                <li><a href="https://imn.cesiumservices.com/arc" class="footer-links" target="_blank">IMN File Service</a></li>-->
+                <!--                <li><a href="https://halyx.cesiumservices.com/" class="footer-links" target="_blank">Halyx Downloads</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<img class="backgroundImage" id="backgroundImage" src="images/home.png" alt="">
 
+<!--<script src="js/htmx.min.js"></script>-->
 </body>
 </html>
