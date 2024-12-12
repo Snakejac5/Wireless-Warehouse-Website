@@ -3,6 +3,6 @@ type = 1
 source = "https://github.com/Snakejac5/Wireless-Warehouse-Website.git"
 owner = "Snakejac"
 version = 1
-image = "/storage/cache/sites/7cbfbcaf-c5c7-42d9-a645-91679df0b02e/images/home.png"
+image = "https://raw.githubusercontent.com/Snakejac5/Wireless-Warehouse-Website/c23a79758fba7a45e83d5a8c47af3dc53ac4046c/images/home.png"
 color = "#005500"
 id = "7cbfbcaf-c5c7-42d9-a645-91679df0b02e"
