@@ -1,0 +1,8 @@
+name = "Wireless Warehouse"
+type = 1
+source = "https://github.com/Snakejac5/Wireless-Warehouse-Website.git"
+owner = "Snakejac"
+version = 1
+image = "/storage/cache/sites/7cbfbcaf-c5c7-42d9-a645-91679df0b02e/images/home.png"
+color = "#005500"
+id = "7cbfbcaf-c5c7-42d9-a645-91679df0b02e"
