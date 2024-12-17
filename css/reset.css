@@ -157,7 +157,7 @@ div.nb_img {
     height: var(--nb-height);
     font-size: 20px;
     line-height: calc(var(--nb-height) - 0px);
-    transition: all .9s ease;
+    transition: all .5s ease-out;
     margin-left: 200px;
 }
 
@@ -168,45 +168,45 @@ div.nb_img {
     60px 100%,
     75px 0,
     85px 0,
-    70px 90%,
+    70px 95%,
     80px 90%,
     95px 0,
     105px 0,
-    90px 80%,
+    90px 85%,
     100px 80%,
     115px 0,
     125px 0,
-    110px 70%,
+    110px 75%,
     120px 70%,
     135px 0,
     145px 0,
-    130px 60%,
+    130px 65%,
     140px 60%,
     155px 0,
     165px 0,
-    150px 50%,
+    150px 55%,
     160px 50%,
     175px 0,
     185px 0,
-    170px 40%,
+    170px 45%,
     180px 40%,
     195px 0,
     205px 0,
-    190px 30%,
+    190px 35%,
     200px 30%,
     215px 0,
     225px 0,
-    210px 20%,
+    210px 25%,
     220px 20%,
     235px 0,
     245px 0,
-    230px 10%,
+    230px 15%,
     240px 10%,
     255px 0
     );
     background-color: rgb(34, 34, 34,0.2);
     height: var(--nb-height);
-    transition: all .9s ease;
+    transition: all .5s ease-out;
 	backdrop-filter: blur(10px);
 }
 
@@ -222,39 +222,39 @@ div.nb_img:hover::after {
     260px 100%,
     275px 0,
     285px 0,
-    270px 80%,
+    270px 90%,
     280px 80%,
     295px 0,
     305px 0,
-    290px 60%,
+    290px 70%,
     300px 60%,
     315px 0,
     325px 0,
-    310px 40%,
+    310px 50%,
     320px 40%,
     335px 0,
     345px 0,
-    330px 20%,
+    330px 30%,
     340px 20%,
     355px 0,
     365px 0,
-    350px 0%,
+    350px 10%,
     360px 0%,
     375px 0,
     385px 0,
-    370px -20%,
+    370px -10%,
     380px -20%,
     395px 0,
     405px 0,
-    390px -40%,
+    390px -30%,
     400px -40%,
     415px 0,
     425px 0,
-    410px -60%,
+    410px -50%,
     420px -60%,
     435px 0,
     445px 0,
-    430px -80%,
+    430px -70%,
     440px -80%,
     455px 0
     );
