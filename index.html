@@ -1,5 +1,5 @@
 <!DOCTYPE html><!-- Welcome to the skeleton! Copy this file to the desired destination and add the page content in the #pageContent div. -->
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
@@ -9,8 +9,9 @@
     <title>Wireless Warehouse | Home</title>
     <style>
         body {
-        background-color: #000000;
-        } 
+            background-color: #000000;
+        }
+        @media only screen and (max-width: 950px) {
         .bg-img {
             position: fixed;
             height: 100%;
@@ -20,20 +21,31 @@
             background-size: cover;
             filter: blur(8px) brightness(50%);
             z-index: -2;
-        } 
+        }
         .backgroundImage {
-          -webkit-mask-image: url('images/gears5.gif');
-          mask-image: url('images/gears5.gif');
-          mask-mode: luminance;
-          mask-repeat: no-repeat;
-          mask-size: 100% 100%;
-          filter: blur(8px) brightness(50%);
-          pointer-events: none;
-          position: absolute;
+            position: fixed;
+            display: none;
+            z-index: -3;
+        }
+        }
+        @media only screen and (min-width: 950px) {
+        .backgroundImage {
+            -webkit-mask-image: url('images/gears5.gif');
+            mask-image: url('images/gears5.gif');
+            mask-mode: luminance;
+            mask-repeat: no-repeat;
+            mask-size: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: blur(8px) brightness(50%);
+            pointer-events: none;
+            position: absolute;
             min-width: 100vw;
             min-height: 100%;
-          object-fit: cover;
-          z-index: -1;
+            object-fit: cover;
+            z-index: -1;
+        }
         }
         #pageContent, #modpack {
             display: grid;
@@ -77,18 +89,8 @@
     </style>
 </head>
 <body>
-    <div class="bg-img"></div>
-    <div style="overflow: hidden;">
-        <picture>
-   <source 
-      class="backgroundImage"
-
-      media="(min-width: 650px)"
-      srcset="images/home.png">
-        </picture>
-<!--<img class="backgroundImage" id="backgroundImage" src="images/home.png" alt="">
--->
-</div>
+<div class="bg-img"></div>
+<img class="backgroundImage" id="backgroundImage" src="images/home.png" alt="">
 <nav>
     <div id="navbar">
         <div class="nav_left">
@@ -99,8 +101,9 @@
             </a>
         </div>
         <div class="nav_center">
-            <a href="index.html" class="nb_item">Home</a>
+            <a href="" class="nb_item">Home</a>
             <a href="FAQ.html" class="nb_item">FAQ</a>
+            <a href="" class="nb_item">Halyx Pages</a>
             <!--            <a href="/server" class="nb_item newTag">Server Status</a>-->
             <!--            <a href="/modpack" class="nb_item">Modpack</a>-->
             <!--            <a href="/archive" class="nb_item newTag">Archive</a>-->
@@ -112,9 +115,9 @@
             <!--                </div>-->
             <!--            </div>-->
         </div>
-        <div class="nav_right">
-            <!-- button class="loginbtn">Sign In</button -->
-        </div>
+<!--        <div class="nav_right">-->
+<!--            &lt;!&ndash; button class="loginbtn">Sign In</button &ndash;&gt;-->
+<!--        </div>-->
     </div>
 </nav>
 <div class="nav_bump"></div>
@@ -196,7 +199,7 @@
         </div>
     </div>
 </div>
-    
+
 <!--<script src="js/htmx.min.js"></script>-->
 </body>
 </html>
