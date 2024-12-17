@@ -157,23 +157,64 @@ div.nb_img {
     height: var(--nb-height);
     font-size: 20px;
     line-height: calc(var(--nb-height) - 0px);
-    transition: all 0.2s ease-out;
-    margin-left: 75px;
+    transition: all .9s ease;
+    margin-left: 200px;
 }
 
+
+#brand {
+    clip-path: polygon(0 0,
+    0 100%,
+    60px 100%,
+    75px 0,
+    85px 0,
+    70px 90%,
+    80px 90%,
+    95px 0,
+    105px 0,
+    90px 80%,
+    100px 80%,
+    115px 0,
+    125px 0,
+    110px 70%,
+    120px 70%,
+    135px 0,
+    145px 0,
+    130px 60%,
+    140px 60%,
+    155px 0,
+    165px 0,
+    150px 50%,
+    160px 50%,
+    175px 0,
+    185px 0,
+    170px 40%,
+    180px 40%,
+    195px 0,
+    205px 0,
+    190px 30%,
+    200px 30%,
+    215px 0,
+    225px 0,
+    210px 20%,
+    220px 20%,
+    235px 0,
+    245px 0,
+    230px 10%,
+    240px 10%,
+    255px 0
+    );
+    background-color: rgb(34, 34, 34,0.2);
+    height: var(--nb-height);
+    transition: all .9s ease;
+	backdrop-filter: blur(10px);
+}
+
+@media only screen and (min-width: 950px){
 div.nb_img:hover::after {
     color: white;
     margin-left: 8px;
 }
-
-#brand {
-    clip-path: polygon(0 0, 0 100%, 60px 100%, 75px 0, 85px 0, 70px 100%, 80px 100%, 95px 0, 105px 0, 90px 100%, 100px 100%, 115px 0);
-    background-color: rgb(34, 34, 34,0.2);
-    height: var(--nb-height);
-    transition: all 0.1s ease-out;
-	backdrop-filter: blur(10px);
-}
-
 #brand:hover {
     clip-path: polygon(
     0 0,
@@ -181,18 +222,54 @@ div.nb_img:hover::after {
     260px 100%,
     275px 0,
     285px 0,
-    270px 100%,
-    280px 100%,
+    270px 80%,
+    280px 80%,
     295px 0,
     305px 0,
-    290px 100%,
-    300px 100%,
-    315px 0
+    290px 60%,
+    300px 60%,
+    315px 0,
+    325px 0,
+    310px 40%,
+    320px 40%,
+    335px 0,
+    345px 0,
+    330px 20%,
+    340px 20%,
+    355px 0,
+    365px 0,
+    350px 0%,
+    360px 0%,
+    375px 0,
+    385px 0,
+    370px -20%,
+    380px -20%,
+    395px 0,
+    405px 0,
+    390px -40%,
+    400px -40%,
+    415px 0,
+    425px 0,
+    410px -60%,
+    420px -60%,
+    435px 0,
+    445px 0,
+    430px -80%,
+    440px -80%,
+    455px 0
     );
     background-color: rgba(34,34,34,1);
 
 }
 
+.nb_item:hover {
+    border-radius: 8px !important;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #2d9c4caF;
+}
+}
 .loginbtn {
     font-size:15px;
     font-family: 'Roboto';
@@ -209,11 +286,13 @@ div.nb_img:hover::after {
     margin-right: 10px;
   }
 
-  .nb_item {
-    padding-left: 20px;
-    padding-right: 20px;
+.nb_item {
+    padding-left: 0px;
+    padding-right: 0px;
     position: relative;
+    padding-inline: 16px;
     width: 100%;
+    border-radius: 16px !important;
 }
 
 .nb_item::after {
@@ -223,13 +302,12 @@ div.nb_img:hover::after {
     height: 2px;
     left: 50%;
     top: 4px;
-    background-color: white;
-    transition: all ease-in-out .2s;
-    border-radius: 3px;
+    background-color: black;
+    transition: all ease .2s;
 }
 
 .nb_item:hover {
-    background-color: #2d9c4c2F;
+    background-color: #2d9c4caF;
 }
 
 /* .nb_folder { */
