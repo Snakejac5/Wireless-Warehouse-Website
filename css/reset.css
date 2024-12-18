@@ -157,13 +157,14 @@ div.nb_img {
     height: var(--nb-height);
     font-size: 20px;
     line-height: calc(var(--nb-height) - 0px);
-    transition: all .5s ease-out;
+    transition: all .3s ease-out;
     margin-left: 200px;
 }
 
 
 #brand {
-    clip-path: polygon(0 0,
+    clip-path: polygon(
+    0 0,
     0 100%,
     60px 100%,
     75px 0,
@@ -206,7 +207,7 @@ div.nb_img {
     );
     background-color: rgb(34, 34, 34,0.2);
     height: var(--nb-height);
-    transition: all .5s ease-out;
+    transition: all .3s ease-out;
 	backdrop-filter: blur(10px);
 }
 
